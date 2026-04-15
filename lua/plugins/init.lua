@@ -18,7 +18,7 @@ return {
   	opts = {
   		ensure_installed = {
   			"lua-language-server", "stylua",
-        "gopls", "terraform-ls"
+        "gopls", "terraform-ls",
   		},
   	},
   },
@@ -27,8 +27,10 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
-        "terraform", "c_sharp", "go"
+        "terraform", "go",
   		},
+      sync_install = false,
+      auto_install = true,
   	},
   },
   --
